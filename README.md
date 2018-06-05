@@ -1,7 +1,7 @@
 # Tastery
 Visit this app at https://carayip.github.io/tasteryapp/
 
-## With so many different options, Tastery narrows down allows your search for restaurants within walking distance of your location.
+## With so many different options, Tastery narrows down your search for restaurants within walking distance of your location.
 
 ## Screenshots
 
