@@ -228,10 +228,10 @@ function clearInfos() {
 // find custom places function
 function findPlaces() {
     var address = document.getElementById("gmap_where").value;
-    // script uses our 'geocoder' in order to find location by address name
+    // script uses 'geocoder' in order to find location by address name
     geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
-            // we will center map
+            // will center map
             var addrLocation = results[0].geometry.location;
             map.setCenter(addrLocation);
             // store current coordinates into hidden variables
@@ -239,7 +239,7 @@ function findPlaces() {
             document.getElementById('lng').value = results[0].geometry.location.lng();
 
 
-            // and then - add new custom marker
+            // add new custom marker
             var addrMarker = new google.maps.Marker({
                 position: addrLocation,
                 map: map,
@@ -273,23 +273,7 @@ function findPlaces() {
         }
 
     });
-    // prepare variables (filter)
-
-    /*var type = "restaurant";
-    var radius = "1000";
-    var lat = document.getElementById('lat').value;
-    var lng = document.getElementById('lng').value;
-    var cur_location = new google.maps.LatLng(lat, lng);
     
-    // prepare request to Places
-    var request = {
-        location: cur_location,
-        radius: radius,
-        types: [type],
-    };
-    service = new google.maps.places.PlacesService(map);
-    service.search(request, createMarkers);
-    service.getDetails(request, createMarkers);*/
 };
 
 //search on enter

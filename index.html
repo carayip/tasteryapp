@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Tastery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An app to find your next go to place to eat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvF-rpKa0nHMoMIZ4OHzdq01Viy6_Srr4&libraries=places"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="script.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvF-rpKa0nHMoMIZ4OHzdq01Viy6_Srr4&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
  <header class="header">
@@ -21,8 +24,9 @@
 
 <div class="searchbar">
 <form class="actions">
-        <label for="gmap_where">Find a place:</label>
-        <input id="gmap_where" type="text" name="gmap_where" onkeypress="handle(event)" placeholder="Enter City, State or Zipcode"/></div>
+    <label for="gmap_where">Find a place:</label>
+        <input id="gmap_where" type="text" name="gmap_where" onkeypress="handle(event)" placeholder="Enter City, State or Zipcode"/>
+</div>
     <input type="hidden" id="lat" name="lat"/>
     <input type="hidden" id="lng" name="lng"/>
     <input type="hidden" id="placeid" name="placeid"/>
@@ -30,11 +34,8 @@
 </form>
 </div>
 
-<div id="gmap_search">   
+<div id="gmap_search"></div>
 </div>
-</div>
-
-
 
 </body>
 </html>
