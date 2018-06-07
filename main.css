@@ -39,8 +39,8 @@ header {
     background-color: #77C9D4;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #77C9D4), color-stop(100%, #57BC90));
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px 20px black;
+    color: black;
+    text-shadow: 20px 20px 20px white;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     position: absolute;
