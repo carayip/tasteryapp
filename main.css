@@ -5,9 +5,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    /*background: #D3D3D3;*/
-    
+    padding: 0;    
 }
 
 body {
@@ -16,8 +14,8 @@ body {
 }
 
 h1, h4 {
-    color: white;
-    text-shadow: 1px 1px 10px black;
+    color: black;
+    text-shadow: 1px 1px 5px white;
     margin-bottom: -10px;
 }
 
@@ -28,8 +26,10 @@ header {
     margin-bottom: 0px;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
+    opacity: 0.7;
     background: url(https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
 }
+
 
 #gmap_search {
     height: 100%;
@@ -54,51 +54,7 @@ header {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 20px;
-
-
-
-    
-    
-    
-/*
-    margin: 0 auto;
-    left: 100%;
-    margin-left: -25px;*/
-
-    
-    
-    /*
-    
-
-    left: 50%;
-    margin-left: -25px;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    height:100px;
-    width: 100px;*/
 }
-
-
-/*.searchbar {
-   height:100px;
-   width: 100px;
-   position: absolute;
-   left: 50%;
-   margin-left: -25px;
-    
-}
-*/
-/*.overlay {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: rgba(0,0,0,0.6);
-}
-*/
 
 .actions label, .actions select {
     display: block;
@@ -126,22 +82,14 @@ header {
     -webkit-box-shadow: inset 0 1px 0 0 white;
     -moz-box-shadow: inset 0 1px 0 0 white;
     box-shadow: inset 0 1px 0 0 white;
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 2;
     display: block;
     margin: 0 auto;
-
-
-     /*margin-top: 550px;
-     margin-left: 620px;
-     position: relative;
-    padding: 6px 0 7px 0;
-    text-align: center;
-    text-shadow: 0 1px 1px #fff;
-    width: 150px;*/
 }
+
 #button1:hover , #searchbtn:hover {
     background-color: #57aaaa;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccd9e8), color-stop(100%, #c1d4e8));
@@ -179,7 +127,7 @@ header {
     -webkit-box-shadow: inset 0 1px 0 0 white;
     -moz-box-shadow: inset 0 1px 0 0 white;
     box-shadow: inset 0 1px 0 0 white;
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 2;
