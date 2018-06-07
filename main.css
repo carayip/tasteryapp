@@ -6,18 +6,25 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #D3D3D3;
+    /*background: #D3D3D3;*/
     
 }
 
 body {
-    position: relative;
+    position: absolute;
+    width: 100%
+}
+
+h1, h4 {
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: -10px;
 }
 
 
 header {
     text-align: center;
-    margin-top: -50px;
+    margin-top: -70px;
     margin-bottom: 0px;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
@@ -29,29 +36,60 @@ header {
     width: 100%;
 }
 .actions {
-    background-color: #D3D3D3;
-    margin-top: 400px;
-    margin-left: 555px;
-    padding: 10px;
-    position: absolute;
+    background-color: #77C9D4;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #77C9D4), color-stop(100%, #57BC90));
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px 20px black;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -140px;
+    height: 150px;
+    width: 300px;
+    display: inline-block;
     z-index: 2;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 20px;
+
+
+
+    
+    
+    
+/*
+    margin: 0 auto;
+    left: 100%;
+    margin-left: -25px;*/
+
+    
+    
+    /*
+    
+
+    left: 50%;
+    margin-left: -25px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    height:100px;
+    width: 100px;*/
 }
 
-.searchbar {
-   height:100%;
-   width: 25%;
+
+/*.searchbar {
+   height:100px;
+   width: 100px;
    position: absolute;
-   margin: 0 auto;
+   left: 50%;
+   margin-left: -25px;
     
 }
-
-.overlay {
+*/
+/*.overlay {
     position: fixed;
     top: 0;
     left:0;
@@ -60,12 +98,12 @@ header {
     z-index: 10;
     background-color: rgba(0,0,0,0.6);
 }
-
+*/
 
 .actions label, .actions select {
     display: block;
     margin: 2px 0 5px 10px;
-    text-align: left;
+    text-align: center;
 }
 .actions input {
     width: 200px;
@@ -77,30 +115,34 @@ header {
 
 }
 #button1 {
-    background-color: #D3D3D3;
-    border-top: 1px solid #8fb2d8;
-    border-left: 1px solid #8fb2d8;
-    border-bottom: 1px solid #8fb2d8;
-    border-right: 1px solid #8fb2d8;
+    background-color: #A5A5AF;
+    border-top: 1px solid #015249;
+    border-left: 1px solid #015249;
+    border-bottom: 1px solid #015249;
+    border-right: 1px solid #015249;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
     -webkit-box-shadow: inset 0 1px 0 0 white;
     -moz-box-shadow: inset 0 1px 0 0 white;
     box-shadow: inset 0 1px 0 0 white;
-    color: #1a3e66;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 2;
-     margin-top: 550px;
+    display: block;
+    margin: 0 auto;
+
+
+     /*margin-top: 550px;
      margin-left: 620px;
      position: relative;
     padding: 6px 0 7px 0;
     text-align: center;
     text-shadow: 0 1px 1px #fff;
-    width: 150px;
+    width: 150px;*/
 }
-#button1:hover {
+#button1:hover , #searchbtn:hover {
     background-color: #57aaaa;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccd9e8), color-stop(100%, #c1d4e8));
     background-image: -webkit-linear-gradient(top, #57aaaa, #c1d4e8);
@@ -126,18 +168,18 @@ header {
 }
 
 #searchbtn {
-    background-color: #D3D3D3;
-    border-top: 1px solid #8fb2d8;
-    border-left: 1px solid #8fb2d8;
-    border-bottom: 1px solid #8fb2d8;
-    border-right: 1px solid #8fb2d8;
+    background-color: #A5A5AF;
+    border-top: 1px solid #015249;
+    border-left: 1px solid #015249;
+    border-bottom: 1px solid #015249;
+    border-right: 1px solid #015249;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
     -webkit-box-shadow: inset 0 1px 0 0 white;
     -moz-box-shadow: inset 0 1px 0 0 white;
     box-shadow: inset 0 1px 0 0 white;
-    color: #1a3e66;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 2;
@@ -147,40 +189,22 @@ header {
     width: 150px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 414px) {
     .actions {
-        margin-top: 400px;
-        margin-left: 390px;
+        top: 60%;
+        margin-left: -130px;
+        height: 125px;
+        width: 250px;
+        font-size: 20px;
+
+    }
+    header {
+        font-size: 30px;
+        margin-top: -60px;
     }
     #button1 {
-        margin-top: 550px;
-        margin-left: 420px;
+        font-size: 20px;
     }
-    
-}
+};
 
-@media only screen and (max-width: 992px) {
-    .actions {
-        margin-top: 400px;
-        margin-left: 400px;
-    }
-    #button1 {
-        margin-top: 550px;
-        margin-left: 440px;
-    }
-    
-}
-
-@media only screen and (min-width: 1025px) {
-    .actions {
-        margin-top: 400px;
-        margin-left: 610px;
-    }
-    #button1 {
-        margin-top: 550px;
-        margin-left: 640px;
-    }
-    
-}
-
-
+   

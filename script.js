@@ -269,7 +269,7 @@ function findPlaces() {
     service.getDetails(request, createMarkers);
 
         } else {
-            alert('Geocode was not successful for the following reason: ' + status);
+            alert('Search again. Please enter location.')
         }
 
     });
@@ -281,21 +281,21 @@ function handle(e){
     if(e.keyCode === 13) {
         e.preventDefault();
         findPlaces();
-        $(".overlay").hide(1000);
+        $(".actions").hide(1000);
     }
 };
 
-//hide overlay after search
+//hide search form after search
 $(document).ready(function() {
     $("#button1").click(function(){
-        $(".overlay").hide(1000);
+        $(".actions").hide(1000);
     });
 });
 
-//show overlay when click search
+//show search form when click search in header
 $(document).ready(function() {
     $("#searchbtn").click(function(){
-        $(".overlay").show(1000);
+        $(".actions").show(1000);
     });
 });
 
