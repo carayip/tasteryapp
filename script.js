@@ -317,7 +317,7 @@ function createMarkers(results, status) {
 // creare single marker function
 
 function createMarker(obj) {
-    var image = 'https://cdn4.iconfinder.com/data/icons/48x48-free-object-icons/48/Green_pin.png';
+    var image = 'https://cdn4.iconfinder.com/data/icons/24x24-free-application-icons/24/Blue_pin.png';
     // prepare new Marker object
     var mark = new google.maps.Marker({
         position: obj.geometry.location,
