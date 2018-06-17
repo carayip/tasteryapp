@@ -252,7 +252,7 @@ function findPlaces() {
 
 
     var type = "restaurant";
-    var radius = "500";
+    var radius = "2000";
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
     var cur_location = new google.maps.LatLng(lat, lng);
