@@ -7,15 +7,15 @@ Visit this app at https://carayip.github.io/tasteryapp/
 
 Enter zipcode or location on the main page and click "search" or press "enter".
 
-![landing page](https://user-images.githubusercontent.com/38255134/41113774-843d54fe-6a50-11e8-81ad-6f467fd173df.png)
+![landing page](https://user-images.githubusercontent.com/38255134/41510496-a5fcec68-7233-11e8-96cc-04a73e93a2fe.png)
 
 Search Results.
 
-![search results](https://user-images.githubusercontent.com/38255134/41113776-844acaee-6a50-11e8-82b6-3e894b02e805.png)
+![search results](https://user-images.githubusercontent.com/38255134/41510497-a60bfa1e-7233-11e8-9501-f2e1a71d7ffb.png)
 
 Click on a marker to view restaurant information.
 
-![information window](https://user-images.githubusercontent.com/38255134/41113773-842cae60-6a50-11e8-8d5a-c417fc4b3fd6.png)
+![information window](https://user-images.githubusercontent.com/38255134/41510495-a5ee9be0-7233-11e8-9abd-2fe5e477fc3c.png)
 
 ## Built with:
 * HTML/CSS/JavaScript/jQuery
