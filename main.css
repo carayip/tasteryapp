@@ -156,18 +156,24 @@ header {
     .actions {
         top: 60%;
         margin-left: -130px;
-        height: 125px;
-        width: 250px;
+        height: 150px;
+        width: 260px;
         font-size: 20px;
 
     }
     header {
         font-size: 30px;
         margin-top: -60px;
+        background-size: cover;
     }
     #button1 {
         font-size: 20px;
     }
+    .header-background {
+        width: 100%;
+    }
 };
+
+
 
    
